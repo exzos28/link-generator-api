@@ -1,4 +1,4 @@
-import { hash, compare } from 'bcryptjs';
+import { compare, hash } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import { SECRET_KEY } from '@config';
 import { CreateUserDto } from '@dtos/users.dto';
@@ -13,20 +13,18 @@ class AuthService {
 
   public async signup(userData: CreateUserDto): Promise<User> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
-    const findUser: User = await this.users.findOne({ email: userData.email });
-    if (findUser) throw new HttpException(409, `You're email ${userData.email} already exists`);
+    const findUser: User = await this.users.findOne({ login: userData.login });
+    if (findUser) throw new HttpException(409, `You're login ${userData.login} already exists`);
 
     const hashedPassword = await hash(userData.password, 10);
-    const createUserData: User = await this.users.create({ ...userData, password: hashedPassword });
-
-    return createUserData;
+    return this.users.create({ ...userData, password: hashedPassword });
   }
 
   public async login(userData: CreateUserDto): Promise<{ token: TokenData; findUser: User }> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
-    const findUser: User = await this.users.findOne({ email: userData.email });
-    if (!findUser) throw new HttpException(409, `You're email ${userData.email} not found`);
+    const findUser: User = await this.users.findOne({ login: userData.login });
+    if (!findUser) throw new HttpException(404, `You're login ${userData.login} not found`);
 
     const isPasswordMatching: boolean = await compare(userData.password, findUser.password);
     if (!isPasswordMatching) throw new HttpException(409, "You're password not matching");
@@ -39,8 +37,8 @@ class AuthService {
   public async logout(userData: User): Promise<User> {
     if (isEmpty(userData)) throw new HttpException(400, "You're not userData");
 
-    const findUser: User = await this.users.findOne({ email: userData.email, password: userData.password });
-    if (!findUser) throw new HttpException(409, `You're email ${userData.email} not found`);
+    const findUser: User = await this.users.findOne({ login: userData.login, password: userData.password });
+    if (!findUser) throw new HttpException(404, `You're login ${userData.login} not found`);
 
     return findUser;
   }

@@ -2,7 +2,7 @@ import { model, Schema, Document } from 'mongoose';
 import { User } from '@interfaces/users.interface';
 
 const userSchema: Schema = new Schema({
-  email: {
+  login: {
     type: String,
     required: true,
     unique: true,

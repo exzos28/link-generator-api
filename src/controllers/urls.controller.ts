@@ -1,8 +1,8 @@
 import { NextFunction, Response } from 'express';
 import UrlService from '@services/url.service';
 import { Url } from '@interfaces/url.interface';
-import { UrlDto } from '@dtos/url.dto';
 import { RequestWithUser } from '@interfaces/auth.interface';
+import { CreateUrlDto, EditUrlDto } from '@dtos/url.dto';
 
 class UsersController {
   public urlService = new UrlService();
@@ -11,7 +11,6 @@ class UsersController {
     try {
       const userId = req.user._id;
       const findAllUsersData: Url[] = await this.urlService.findAll(userId);
-
       res.status(200).json({ data: findAllUsersData, message: 'findAll' });
     } catch (error) {
       next(error);
@@ -33,7 +32,7 @@ class UsersController {
   public create = async (req: RequestWithUser, res: Response, next: NextFunction) => {
     try {
       const userId = req.user._id;
-      const urlData: UrlDto = req.body;
+      const urlData: CreateUrlDto = req.body;
       const createUrlData: Url = await this.urlService.create(urlData, userId);
 
       res.status(201).json({ data: createUrlData, message: 'created' });
@@ -46,7 +45,7 @@ class UsersController {
     try {
       const userId = req.user._id;
       const urlId: string = req.params.id;
-      const urlData: UrlDto = req.body;
+      const urlData: EditUrlDto = req.body;
       const updateUserData: Url = await this.urlService.update(urlId, urlData, userId);
 
       res.status(200).json({ data: updateUserData, message: 'updated' });

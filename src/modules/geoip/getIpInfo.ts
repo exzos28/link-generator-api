@@ -1,7 +1,7 @@
 import geoip from 'geoip-lite';
 
-export function getIpInfo(ip: string) {
-  return geoip.lookup(ip) as GeoIp | null;
+export function getIpInfo(ip: string): GeoIp | null {
+  return geoip.lookup(ip);
 }
 
 export type GeoIp = {

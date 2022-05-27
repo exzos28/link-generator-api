@@ -2,7 +2,7 @@ import urlModel from '@models/url.model';
 import { Url } from '@interfaces/url.interface';
 import { isEmpty } from '@utils/util';
 import { HttpException } from '@exceptions/HttpException';
-import { UrlDto } from '@dtos/url.dto';
+import { CreateUrlDto, EditUrlDto } from '@dtos/url.dto';
 import { nanoid } from 'nanoid';
 
 class UrlService {
@@ -13,10 +13,18 @@ class UrlService {
   }
 
   public async findUrlById(urlId: string, userId: string): Promise<Url> {
-    if (isEmpty(urlId)) throw new HttpException(400, "You're not userId");
+    if (isEmpty(urlId)) throw new HttpException(400, "You're not urlId");
 
     const findUrl: Url = await this.urls.findOne({ _id: urlId, createdBy: userId });
     if (!findUrl) throw new HttpException(404, 'Not found');
+
+    return findUrl;
+  }
+
+  public async addClick(urlId: string) {
+    const findUrl = await this.urls.findOne({ _id: urlId });
+    findUrl.clicks = findUrl.clicks + 1;
+    await findUrl.save();
 
     return findUrl;
   }
@@ -30,14 +38,14 @@ class UrlService {
     return findUrl;
   }
 
-  public async create(urlData: UrlDto, userId: string): Promise<Url> {
+  public async create(urlData: CreateUrlDto, userId: string): Promise<Url> {
     if (isEmpty(urlData)) throw new HttpException(400, "You're not url data");
     return this.urls.create({ origUrl: urlData.url, shortUrl: nanoid(5), createdBy: userId });
   }
 
-  public async update(urlId: string, urlData: UrlDto, userId: string): Promise<Url> {
+  public async update(urlId: string, urlData: EditUrlDto, userId: string): Promise<Url> {
     if (isEmpty(urlData)) throw new HttpException(400, "You're not url data");
-    const updateUrlById: Url = await this.urls.findOneAndUpdate({ _id: urlId, createdBy: userId }, { urlData });
+    const updateUrlById: Url = await this.urls.findOneAndUpdate({ _id: urlId, createdBy: userId }, { origUrl: urlData.origUrl });
     if (!updateUrlById) throw new HttpException(409, "You're not url");
 
     return updateUrlById;

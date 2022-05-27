@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc956655-ff2d-4efe-a8d3-fdaa00396a8c" name="Changes" comment="Initial commit" />
+    <list default="true" id="dc956655-ff2d-4efe-a8d3-fdaa00396a8c" name="Changes" comment="Initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/auth.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/index.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/index.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/urls.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/urls.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/users.controller.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/url.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/url.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dtos/users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/users.dto.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/geo.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/visit.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/users.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/users.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/geo.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/visit.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/users.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/users.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/geoip/getIpInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/geoip/getIpInfo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/urls.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/urls.route.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/users.route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/geo.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/visits.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/url.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/url.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/users.service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/users.test.ts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +31,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -23,6 +48,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/exzos/Documents/Politechnika/6/Szkielety programistyczne w aplikacjach internetowych/link-generator&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -96,8 +122,26 @@
       <workItem from="1653210602064" duration="2963000" />
       <workItem from="1653213582733" duration="899000" />
       <workItem from="1653216872469" duration="928000" />
-      <workItem from="1653506799153" duration="13318000" />
+      <workItem from="1653506799153" duration="14022000" />
+      <workItem from="1653558294290" duration="16000" />
+      <workItem from="1653592925810" duration="1244000" />
+      <workItem from="1653595276322" duration="13046000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1653555612411</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653555612411</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1653555646589</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653555646589</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

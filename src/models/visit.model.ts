@@ -1,38 +1,35 @@
 import { model, Schema, Document } from 'mongoose';
-import { Geo } from '@interfaces/geo.interface';
+import { Visit } from '@interfaces/visit.interface';
 
-const geoSchema: Schema = new Schema({
+const visitSchema: Schema = new Schema({
   ip: {
     type: String,
     required: true,
   },
   country: {
     type: String,
-    required: true,
   },
   region: {
     type: String,
-    required: true,
   },
   timezone: {
     type: String,
-    required: true,
   },
   city: {
     type: String,
-    required: true,
   },
-  // latitude, longitude
   ll: {
     type: Schema.Types.Array,
-    required: true,
   },
   area: {
     type: Number,
-    required: true,
+  },
+  urlId: {
+    type: Schema.Types.ObjectId,
+    ref: 'Url',
   },
 });
 
-const urlModel = model<Geo & Document>('Geo', geoSchema);
+const visitModel = model<Visit & Document>('Visit', visitSchema);
 
-export default urlModel;
+export default visitModel;

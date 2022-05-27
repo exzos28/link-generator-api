@@ -1,4 +1,4 @@
-export interface Geo {
+export interface Visit {
   _id: string;
   ip: string;
   country: string;
@@ -7,4 +7,6 @@ export interface Geo {
   city: string;
   ll: [number, number];
   area: number;
+
+  urlId: string;
 }
