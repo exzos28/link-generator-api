@@ -1,28 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc956655-ff2d-4efe-a8d3-fdaa00396a8c" name="Changes" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+    <list default="true" id="dc956655-ff2d-4efe-a8d3-fdaa00396a8c" name="Changes" comment="Feature: Add the ability to track user visits">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/auth.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/auth.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/index.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/index.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/urls.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/urls.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controllers/users.controller.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/url.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/url.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dtos/users.dto.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/dtos/users.dto.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/geo.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/visit.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/interfaces/users.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/users.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/geo.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/visit.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/users.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/users.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/geoip/getIpInfo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/geoip/getIpInfo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/urls.route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/urls.route.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/users.route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/geo.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/visits.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/url.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/url.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/users.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/users.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +41,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.lint">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -125,7 +111,7 @@
       <workItem from="1653506799153" duration="14022000" />
       <workItem from="1653558294290" duration="16000" />
       <workItem from="1653592925810" duration="1244000" />
-      <workItem from="1653595276322" duration="13046000" />
+      <workItem from="1653595276322" duration="13959000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1653555612411</created>
@@ -141,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653555646589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Feature: Add the ability to track user visits">
+      <created>1653613905140</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653613905140</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +156,7 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Feature: Add the ability to track user visits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feature: Add the ability to track user visits" />
   </component>
 </project>
