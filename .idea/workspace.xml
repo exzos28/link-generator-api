@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc956655-ff2d-4efe-a8d3-fdaa00396a8c" name="Changes" comment="Feature: Add the ability to track user visits">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="dc956655-ff2d-4efe-a8d3-fdaa00396a8c" name="Changes" comment="make it better" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +9,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -34,11 +32,17 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/exzos/Documents/Politechnika/6/Szkielety programistyczne w aplikacjach internetowych/link-generator&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;/Users/exzos/Documents/Politechnika/6/Szkielety programistyczne w aplikacjach internetowych/link-generator/node_modules/jest&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/exzos/Documents/Politechnika/6/Szkielety programistyczne w aplikacjach internetowych/link-generator/node_modules/prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/exzos/Documents/Politechnika/6/Szkielety programistyczne w aplikacjach internetowych/link-generator/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;TEXT&quot;
+    ]
   }
 }</component>
   <component name="RecentsManager">
@@ -46,15 +50,39 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.lint">
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
+  <component name="RunManager" selected="Docker.docker-compose.yml: Compose Deployment">
+    <configuration name="Testing Auth" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/src/tests/auth.test.ts" />
+      <test-names>
+        <test-name value="Testing Auth" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.mongodb: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="mongodb" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -62,16 +90,6 @@
       <command value="run" />
       <scripts>
         <script value="lint" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -89,10 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.lint" />
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.mongodb: Compose Deployment" />
+        <item itemvalue="Jest.Testing Auth" />
         <item itemvalue="npm.test" />
+        <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
   </component>
@@ -111,7 +130,17 @@
       <workItem from="1653506799153" duration="14022000" />
       <workItem from="1653558294290" duration="16000" />
       <workItem from="1653592925810" duration="1244000" />
-      <workItem from="1653595276322" duration="13959000" />
+      <workItem from="1653595276322" duration="14513000" />
+      <workItem from="1653644021186" duration="164000" />
+      <workItem from="1653754742635" duration="3945000" />
+      <workItem from="1653762727095" duration="1221000" />
+      <workItem from="1654801106059" duration="515000" />
+      <workItem from="1654801942509" duration="974000" />
+      <workItem from="1654804833503" duration="275000" />
+      <workItem from="1654805123209" duration="494000" />
+      <workItem from="1654887140859" duration="8719000" />
+      <workItem from="1654897085501" duration="2512000" />
+      <workItem from="1655022548358" duration="469000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1653555612411</created>
@@ -134,11 +163,63 @@
       <option name="project" value="LOCAL" />
       <updated>1653613905140</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Add license">
+      <created>1653614808530</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653614808530</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Magic5">
+      <created>1654896228015</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1654896228015</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Magic5">
+      <created>1654896232543</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654896232543</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Magic5">
+      <created>1655022960136</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655022960136</updated>
+    </task>
+    <task id="LOCAL-00008" summary="make it better">
+      <created>1655022995830</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655022995830</updated>
+    </task>
+    <task id="LOCAL-00009" summary="make it better">
+      <created>1655023046784</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1655023046784</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -157,6 +238,13 @@
     </ignored-roots>
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Feature: Add the ability to track user visits" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feature: Add the ability to track user visits" />
+    <MESSAGE value="Add license" />
+    <MESSAGE value="Magic5" />
+    <MESSAGE value="make it better" />
+    <option name="LAST_COMMIT_MESSAGE" value="make it better" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

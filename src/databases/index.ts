@@ -1,6 +1,9 @@
-import { DB_HOST, DB_PORT, DB_DATABASE } from '@config';
+import { MONGO_CONNECT_URL } from '@config';
+import { ConnectOptions } from 'mongoose';
 
-export const dbConnection = {
-  url: `mongodb://${DB_HOST}:${DB_PORT}/${DB_DATABASE}`,
-  options: {},
+export const dbConnection: { url: string; options: ConnectOptions } = {
+  url: MONGO_CONNECT_URL,
+  options: {
+    authSource: 'admin',
+  },
 };

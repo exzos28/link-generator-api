@@ -5,7 +5,7 @@ import express from 'express';
 import helmet from 'helmet';
 import hpp from 'hpp';
 import morgan from 'morgan';
-import { connect, set } from 'mongoose';
+import mongoose from 'mongoose';
 import swaggerJSDoc from 'swagger-jsdoc';
 import swaggerUi from 'swagger-ui-express';
 import { NODE_ENV, PORT, LOG_FORMAT, ORIGIN, CREDENTIALS } from '@config';
@@ -48,9 +48,9 @@ class App {
   }
   private async _connectToDatabase() {
     if (this.env !== 'production') {
-      set('debug', true);
+      mongoose.set('debug', true);
     }
-    await connect(dbConnection.url, dbConnection.options, error => {
+    await mongoose.connect(dbConnection.url, dbConnection.options, error => {
       if (error) {
         console.error('error', error);
       }
